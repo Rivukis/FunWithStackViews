@@ -27,10 +27,10 @@
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcx-v4-Mtf" userLabel="View2">
-                            <rect key="frame" x="0.0" y="113" width="600" height="100"/>
+                            <rect key="frame" x="0.0" y="112.5" width="600" height="100"/>
                             <color key="backgroundColor" red="0.39182700770741696" green="0.77790682103466946" blue="0.81755050505050508" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" priority="950" constant="100" id="Qvv-h1-qez"/>
+                                <constraint firstAttribute="height" priority="949" constant="100" id="Qvv-h1-qez"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Qq-qf-ryo" userLabel="View3">

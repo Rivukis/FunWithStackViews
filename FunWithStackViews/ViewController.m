@@ -10,6 +10,10 @@
 
 @interface ViewController ()
 
+@property (weak, nonatomic) IBOutlet UILabel *subLabelThree;
+
+@property (assign, nonatomic) BOOL hasLotsOfText;
+
 @end
 
 @implementation ViewController
@@ -22,6 +26,15 @@
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+- (IBAction)buttonPressed:(UIButton *)sender {
+    if (self.hasLotsOfText) {
+        self.subLabelThree.text = @"only four words now";
+    } else {
+        self.subLabelThree.text = @"many lines many lines many lines many lines many lines many lines many lines many lines many lines many lines many lines many lines";
+        
+    }
+    self.hasLotsOfText = !self.hasLotsOfText;
 }
 
 @end

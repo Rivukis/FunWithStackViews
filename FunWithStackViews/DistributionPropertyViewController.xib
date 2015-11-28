@@ -30,21 +30,21 @@
                             <rect key="frame" x="0.0" y="112.5" width="600" height="100"/>
                             <color key="backgroundColor" red="0.39182700770741696" green="0.77790682103466946" blue="0.81755050505050508" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" priority="949" constant="100" id="Qvv-h1-qez"/>
+                                <constraint firstAttribute="height" priority="900" constant="100" id="Qvv-h1-qez"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Qq-qf-ryo" userLabel="View3">
                             <rect key="frame" x="0.0" y="275" width="600" height="50"/>
                             <color key="backgroundColor" red="0.80825897472040187" green="0.810546875" blue="0.3885187288298067" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" priority="950" constant="50" id="1SO-Sa-qKY"/>
+                                <constraint firstAttribute="height" priority="900" constant="50" id="1SO-Sa-qKY"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlL-TE-Caw" userLabel="View4">
                             <rect key="frame" x="0.0" y="425" width="600" height="25"/>
                             <color key="backgroundColor" red="0.810546875" green="0.47900562655171258" blue="0.44470546321333654" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" priority="949" constant="25" id="XTs-cz-1CO"/>
+                                <constraint firstAttribute="height" priority="950" constant="25" id="XTs-cz-1CO"/>
                             </constraints>
                         </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Rv-09-dZn" userLabel="View5">

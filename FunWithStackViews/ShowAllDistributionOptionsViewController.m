@@ -55,11 +55,11 @@
     UIView *subview = childController.view;
     UILayoutGuide *margins = parentView.layoutMarginsGuide;
     
-    [self addChildViewController:childController];
-    [childController didMoveToParentViewController:self];
-    
     [subview setTranslatesAutoresizingMaskIntoConstraints:NO];
     parentView.layoutMargins = UIEdgeInsetsZero;
+    
+    [self addChildViewController:childController];
+    [childController didMoveToParentViewController:self];
     
     [parentView addSubview:subview];
     [childController.view.topAnchor constraintEqualToAnchor:margins.topAnchor].active = YES;

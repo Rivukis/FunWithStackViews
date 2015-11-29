@@ -13,8 +13,8 @@
 		7A3850311BFD39B8003193A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A38502F1BFD39B8003193A6 /* Main.storyboard */; };
 		7A3850331BFD39B8003193A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A3850321BFD39B8003193A6 /* Assets.xcassets */; };
 		7A3850361BFD39B8003193A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A3850341BFD39B8003193A6 /* LaunchScreen.storyboard */; };
-		7A6151BA1C0668F60029FBA0 /* DistributionPropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6151B81C0668F60029FBA0 /* DistributionPropertyViewController.m */; };
-		7A6151BB1C0668F60029FBA0 /* DistributionPropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A6151B91C0668F60029FBA0 /* DistributionPropertyViewController.xib */; };
+		7A6151BA1C0668F60029FBA0 /* PropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6151B81C0668F60029FBA0 /* PropertyViewController.m */; };
+		7A6151BB1C0668F60029FBA0 /* PropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A6151B91C0668F60029FBA0 /* PropertyViewController.xib */; };
 		7A6151BF1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6151BD1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.m */; };
 		7A6151C01C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A6151BE1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.xib */; };
 /* End PBXBuildFile section */
@@ -30,9 +30,9 @@
 		7A3850321BFD39B8003193A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7A3850351BFD39B8003193A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7A3850371BFD39B8003193A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		7A6151B71C0668F60029FBA0 /* DistributionPropertyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DistributionPropertyViewController.h; sourceTree = "<group>"; };
-		7A6151B81C0668F60029FBA0 /* DistributionPropertyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DistributionPropertyViewController.m; sourceTree = "<group>"; };
-		7A6151B91C0668F60029FBA0 /* DistributionPropertyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DistributionPropertyViewController.xib; sourceTree = "<group>"; };
+		7A6151B71C0668F60029FBA0 /* PropertyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyViewController.h; sourceTree = "<group>"; };
+		7A6151B81C0668F60029FBA0 /* PropertyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyViewController.m; sourceTree = "<group>"; };
+		7A6151B91C0668F60029FBA0 /* PropertyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertyViewController.xib; sourceTree = "<group>"; };
 		7A6151BC1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAllDistributionOptionsViewController.h; sourceTree = "<group>"; };
 		7A6151BD1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAllDistributionOptionsViewController.m; sourceTree = "<group>"; };
 		7A6151BE1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowAllDistributionOptionsViewController.xib; sourceTree = "<group>"; };
@@ -76,9 +76,9 @@
 				7A6151BC1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.h */,
 				7A6151BD1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.m */,
 				7A6151BE1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.xib */,
-				7A6151B71C0668F60029FBA0 /* DistributionPropertyViewController.h */,
-				7A6151B81C0668F60029FBA0 /* DistributionPropertyViewController.m */,
-				7A6151B91C0668F60029FBA0 /* DistributionPropertyViewController.xib */,
+				7A6151B71C0668F60029FBA0 /* PropertyViewController.h */,
+				7A6151B81C0668F60029FBA0 /* PropertyViewController.m */,
+				7A6151B91C0668F60029FBA0 /* PropertyViewController.xib */,
 				7A3850321BFD39B8003193A6 /* Assets.xcassets */,
 				7A3850341BFD39B8003193A6 /* LaunchScreen.storyboard */,
 				7A3850371BFD39B8003193A6 /* Info.plist */,
@@ -156,7 +156,7 @@
 				7A6151C01C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.xib in Resources */,
 				7A3850331BFD39B8003193A6 /* Assets.xcassets in Resources */,
 				7A3850311BFD39B8003193A6 /* Main.storyboard in Resources */,
-				7A6151BB1C0668F60029FBA0 /* DistributionPropertyViewController.xib in Resources */,
+				7A6151BB1C0668F60029FBA0 /* PropertyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,7 +171,7 @@
 				7A38502E1BFD39B8003193A6 /* ViewController.m in Sources */,
 				7A38502B1BFD39B8003193A6 /* AppDelegate.m in Sources */,
 				7A3850281BFD39B8003193A6 /* main.m in Sources */,
-				7A6151BA1C0668F60029FBA0 /* DistributionPropertyViewController.m in Sources */,
+				7A6151BA1C0668F60029FBA0 /* PropertyViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

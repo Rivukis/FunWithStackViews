@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="DistributionPropertyViewController">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="PropertyViewController">
             <connections>
                 <outlet property="stackView" destination="G6c-05-mkA" id="b2W-Kt-6WL"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -19,39 +18,44 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalCentering" translatesAutoresizingMaskIntoConstraints="NO" id="G6c-05-mkA">
                     <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                     <subviews>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dEt-7A-FWy" userLabel="View1">
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="dEt-7A-FWy" userLabel="View1">
                             <rect key="frame" x="0.0" y="0.0" width="600" height="50"/>
                             <color key="backgroundColor" red="0.41560484777604495" green="0.810546875" blue="0.37967815621041845" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
+                                <constraint firstAttribute="width" priority="950" constant="20" id="47A-5h-Fxc"/>
                                 <constraint firstAttribute="height" priority="950" constant="50" id="Goa-fW-B5K"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hcx-v4-Mtf" userLabel="View2">
-                            <rect key="frame" x="0.0" y="112.5" width="600" height="100"/>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hcx-v4-Mtf" userLabel="View2">
+                            <rect key="frame" x="0.0" y="116" width="600" height="100"/>
                             <color key="backgroundColor" red="0.39182700770741696" green="0.77790682103466946" blue="0.81755050505050508" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
+                                <constraint firstAttribute="width" priority="950" constant="20" id="ChJ-Cq-FaF"/>
                                 <constraint firstAttribute="height" priority="900" constant="100" id="Qvv-h1-qez"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Qq-qf-ryo" userLabel="View3">
-                            <rect key="frame" x="0.0" y="275" width="600" height="50"/>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3Qq-qf-ryo" userLabel="View3">
+                            <rect key="frame" x="0.0" y="282" width="600" height="50"/>
                             <color key="backgroundColor" red="0.80825897472040187" green="0.810546875" blue="0.3885187288298067" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" priority="900" constant="50" id="1SO-Sa-qKY"/>
+                                <constraint firstAttribute="width" priority="950" constant="20" id="AEa-vg-mfW"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wlL-TE-Caw" userLabel="View4">
-                            <rect key="frame" x="0.0" y="425" width="600" height="25"/>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wlL-TE-Caw" userLabel="View4">
+                            <rect key="frame" x="0.0" y="435" width="600" height="25"/>
                             <color key="backgroundColor" red="0.810546875" green="0.47900562655171258" blue="0.44470546321333654" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
                                 <constraint firstAttribute="height" priority="950" constant="25" id="XTs-cz-1CO"/>
+                                <constraint firstAttribute="width" priority="950" constant="20" id="era-4V-49o"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Rv-09-dZn" userLabel="View5">
-                            <rect key="frame" x="0.0" y="550" width="600" height="50"/>
+                        <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9Rv-09-dZn" userLabel="View5">
+                            <rect key="frame" x="0.0" y="575" width="600" height="25"/>
                             <color key="backgroundColor" red="0.75968710383517735" green="0.49560939216362565" blue="0.810546875" alpha="1" colorSpace="calibratedRGB"/>
                             <constraints>
-                                <constraint firstAttribute="height" priority="950" constant="50" id="lTq-Ca-Kde"/>
+                                <constraint firstAttribute="width" priority="950" constant="20" id="erb-af-ZBd"/>
+                                <constraint firstAttribute="height" priority="950" constant="25" id="lTq-Ca-Kde"/>
                             </constraints>
                         </view>
                     </subviews>

@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DistributionPropertyViewController : UIViewController
+@interface PropertyViewController : UIViewController
 
 - (instancetype)initWithDistributionOption:(UIStackViewDistribution)distributionOption;
 

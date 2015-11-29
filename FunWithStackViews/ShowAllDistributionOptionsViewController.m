@@ -7,7 +7,7 @@
 //
 
 #import "ShowAllDistributionOptionsViewController.h"
-#import "DistributionPropertyViewController.h"
+#import "PropertyViewController.h"
 
 @interface ShowAllDistributionOptionsViewController ()
 
@@ -38,11 +38,11 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    DistributionPropertyViewController *fillVC = [[DistributionPropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionFill];
-    DistributionPropertyViewController *fillEquallyVC = [[DistributionPropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionFillEqually];
-    DistributionPropertyViewController *fillProportionallyVC = [[DistributionPropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionFillProportionally];
-    DistributionPropertyViewController *equalSpacingVC = [[DistributionPropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionEqualSpacing];
-    DistributionPropertyViewController *equalCenteringVC = [[DistributionPropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionEqualCentering];
+    PropertyViewController *fillVC = [[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionFill];
+    PropertyViewController *fillEquallyVC = [[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionFillEqually];
+    PropertyViewController *fillProportionallyVC = [[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionFillProportionally];
+    PropertyViewController *equalSpacingVC = [[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionEqualSpacing];
+    PropertyViewController *equalCenteringVC = [[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionEqualCentering];
     
     [self addChildViewController:fillVC toParentView:self.fillView];
     [self addChildViewController:fillEquallyVC toParentView:self.fillEquallyView];

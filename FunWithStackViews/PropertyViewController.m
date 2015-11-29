@@ -6,9 +6,9 @@
 //  Copyright © 2015 Brian Radebaugh. All rights reserved.
 //
 
-#import "DistributionPropertyViewController.h"
+#import "PropertyViewController.h"
 
-@interface DistributionPropertyViewController ()
+@interface PropertyViewController ()
 
 @property (nonatomic, weak) IBOutlet UIStackView *stackView;
 

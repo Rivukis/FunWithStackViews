@@ -6,10 +6,10 @@
 //  Copyright © 2015 Brian Radebaugh. All rights reserved.
 //
 
-#import "ShowAllDistributionOptionsViewController.h"
+#import "ShowPropertyOptionsViewController.h"
 #import "PropertyViewController.h"
 
-@interface ShowAllDistributionOptionsViewController ()
+@interface ShowPropertyOptionsViewController ()
 
 @property (nonatomic, weak) IBOutlet UIView *fillView;
 @property (nonatomic, weak) IBOutlet UIView *fillEquallyView;
@@ -19,21 +19,7 @@
 
 @end
 
-@implementation ShowAllDistributionOptionsViewController
-
-- (instancetype)init {
-    self = [super init];
-    if (self) {
-        
-    }
-    return self;
-}
-
-- (void)viewWillAppear:(BOOL)animated {
-    [super viewWillAppear:animated];
-    
-    
-}
+@implementation ShowPropertyOptionsViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

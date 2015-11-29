@@ -15,8 +15,8 @@
 		7A3850361BFD39B8003193A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7A3850341BFD39B8003193A6 /* LaunchScreen.storyboard */; };
 		7A6151BA1C0668F60029FBA0 /* PropertyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6151B81C0668F60029FBA0 /* PropertyViewController.m */; };
 		7A6151BB1C0668F60029FBA0 /* PropertyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A6151B91C0668F60029FBA0 /* PropertyViewController.xib */; };
-		7A6151BF1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6151BD1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.m */; };
-		7A6151C01C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A6151BE1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.xib */; };
+		7A6151BF1C0670BD0029FBA0 /* ShowPropertyOptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A6151BD1C0670BD0029FBA0 /* ShowPropertyOptionsViewController.m */; };
+		7A6151C01C0670BD0029FBA0 /* ShowPropertyOptionsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A6151BE1C0670BD0029FBA0 /* ShowPropertyOptionsViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,9 +33,9 @@
 		7A6151B71C0668F60029FBA0 /* PropertyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PropertyViewController.h; sourceTree = "<group>"; };
 		7A6151B81C0668F60029FBA0 /* PropertyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PropertyViewController.m; sourceTree = "<group>"; };
 		7A6151B91C0668F60029FBA0 /* PropertyViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PropertyViewController.xib; sourceTree = "<group>"; };
-		7A6151BC1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowAllDistributionOptionsViewController.h; sourceTree = "<group>"; };
-		7A6151BD1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowAllDistributionOptionsViewController.m; sourceTree = "<group>"; };
-		7A6151BE1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowAllDistributionOptionsViewController.xib; sourceTree = "<group>"; };
+		7A6151BC1C0670BD0029FBA0 /* ShowPropertyOptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ShowPropertyOptionsViewController.h; sourceTree = "<group>"; };
+		7A6151BD1C0670BD0029FBA0 /* ShowPropertyOptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ShowPropertyOptionsViewController.m; sourceTree = "<group>"; };
+		7A6151BE1C0670BD0029FBA0 /* ShowPropertyOptionsViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ShowPropertyOptionsViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,9 +73,9 @@
 				7A38502C1BFD39B8003193A6 /* ViewController.h */,
 				7A38502D1BFD39B8003193A6 /* ViewController.m */,
 				7A38502F1BFD39B8003193A6 /* Main.storyboard */,
-				7A6151BC1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.h */,
-				7A6151BD1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.m */,
-				7A6151BE1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.xib */,
+				7A6151BC1C0670BD0029FBA0 /* ShowPropertyOptionsViewController.h */,
+				7A6151BD1C0670BD0029FBA0 /* ShowPropertyOptionsViewController.m */,
+				7A6151BE1C0670BD0029FBA0 /* ShowPropertyOptionsViewController.xib */,
 				7A6151B71C0668F60029FBA0 /* PropertyViewController.h */,
 				7A6151B81C0668F60029FBA0 /* PropertyViewController.m */,
 				7A6151B91C0668F60029FBA0 /* PropertyViewController.xib */,
@@ -153,7 +153,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				7A3850361BFD39B8003193A6 /* LaunchScreen.storyboard in Resources */,
-				7A6151C01C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.xib in Resources */,
+				7A6151C01C0670BD0029FBA0 /* ShowPropertyOptionsViewController.xib in Resources */,
 				7A3850331BFD39B8003193A6 /* Assets.xcassets in Resources */,
 				7A3850311BFD39B8003193A6 /* Main.storyboard in Resources */,
 				7A6151BB1C0668F60029FBA0 /* PropertyViewController.xib in Resources */,
@@ -167,7 +167,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A6151BF1C0670BD0029FBA0 /* ShowAllDistributionOptionsViewController.m in Sources */,
+				7A6151BF1C0670BD0029FBA0 /* ShowPropertyOptionsViewController.m in Sources */,
 				7A38502E1BFD39B8003193A6 /* ViewController.m in Sources */,
 				7A38502B1BFD39B8003193A6 /* AppDelegate.m in Sources */,
 				7A3850281BFD39B8003193A6 /* main.m in Sources */,

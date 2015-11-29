@@ -11,5 +11,6 @@
 @interface PropertyViewController : UIViewController
 
 - (instancetype)initWithDistributionOption:(UIStackViewDistribution)distributionOption;
+- (instancetype)initWithAlignmentOption:(UIStackViewAlignment)alignmentOption;
 
 @end

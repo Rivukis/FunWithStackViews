@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ShowAllDistributionOptionsViewController : UIViewController
+@interface ShowPropertyOptionsViewController : UIViewController
 
 @end

@@ -13,23 +13,36 @@
 @property (nonatomic, weak) IBOutlet UIStackView *stackView;
 
 @property (nonatomic, assign) UIStackViewDistribution distributionOption;
+@property (nonatomic, assign) UIStackViewAlignment alignmentOption;
 
 @end
 
-@implementation DistributionPropertyViewController
+@implementation PropertyViewController
 
 - (instancetype)initWithDistributionOption:(UIStackViewDistribution)distributionOption {
     self = [super init];
     if (self) {
         _distributionOption = distributionOption;
+        _alignmentOption = UIStackViewAlignmentFill;
     }
     return self;
+}
+
+- (instancetype)initWithAlignmentOption:(UIStackViewAlignment)alignmentOption {
+    self = [super init];
+    if (self) {
+        _distributionOption = UIStackViewDistributionFillEqually;
+        _alignmentOption = alignmentOption;
+    }
+    return self;
+
 }
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     self.stackView.distribution = self.distributionOption;
+    self.stackView.alignment = self.alignmentOption;
 }
 
 @end

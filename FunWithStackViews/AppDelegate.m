@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-#import "ShowAllDistributionOptionsViewController.h"
+#import "ShowPropertyOptionsViewController.h"
 
 @interface AppDelegate ()
 

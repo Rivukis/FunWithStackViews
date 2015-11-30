@@ -10,7 +10,7 @@
 
 @interface PropertyViewController : UIViewController
 
-- (instancetype)initWithDistributionOption:(UIStackViewDistribution)distributionOption;
-- (instancetype)initWithAlignmentOption:(UIStackViewAlignment)alignmentOption;
+- (instancetype)initWithDistributionOption:(UIStackViewDistribution)distributionOption spacing:(CGFloat)spacing;
+- (instancetype)initWithAlignmentOption:(UIStackViewAlignment)alignmentOption spacing:(CGFloat)spacing;
 
 @end

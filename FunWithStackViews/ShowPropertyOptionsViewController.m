@@ -24,15 +24,17 @@
 @property (nonatomic, weak) IBOutlet UILabel *purpleAmount;
 
 @property (nonatomic, assign) ShowPropertyOption propertyToShowOption;
+@property (nonatomic, assign) CGFloat spacing;
 
 @end
 
 @implementation ShowPropertyOptionsViewController
 
-- (instancetype)initWithPropertyToShowOption:(ShowPropertyOption)propertyToShowOption {
+- (instancetype)initWithPropertyToShowOption:(ShowPropertyOption)propertyToShowOption spacing:(CGFloat)spacing {
     self = [super init];
     if (self) {
         _propertyToShowOption = propertyToShowOption;
+        _spacing = spacing;
     }
     return self;
 }
@@ -56,20 +58,28 @@
 }
 
 - (void)setupDistributionOptionChildViewControllers {
-    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionFill]];
-    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionFillEqually]];
-    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionFillProportionally]];
-    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionEqualSpacing]];
-    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionEqualCentering]];
+    [self addToStachViewChildViewController:[self childViewControllerWithDistributionOption:UIStackViewDistributionFill]];
+    [self addToStachViewChildViewController:[self childViewControllerWithDistributionOption:UIStackViewDistributionFillEqually]];
+    [self addToStachViewChildViewController:[self childViewControllerWithDistributionOption:UIStackViewDistributionFillProportionally]];
+    [self addToStachViewChildViewController:[self childViewControllerWithDistributionOption:UIStackViewDistributionEqualSpacing]];
+    [self addToStachViewChildViewController:[self childViewControllerWithDistributionOption:UIStackViewDistributionEqualCentering]];
 }
 
 - (void)setupAlignmentOptionChildViewControllers {
-    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithAlignmentOption:UIStackViewAlignmentFill]];
-    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithAlignmentOption:UIStackViewAlignmentTop]];
-    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithAlignmentOption:UIStackViewAlignmentCenter]];
-    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithAlignmentOption:UIStackViewAlignmentBottom]];
-    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithAlignmentOption:UIStackViewAlignmentFirstBaseline]];
-    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithAlignmentOption:UIStackViewAlignmentLastBaseline]];
+    [self addToStachViewChildViewController:[self childViewControllerWithAlignmentOption:UIStackViewAlignmentFill]];
+    [self addToStachViewChildViewController:[self childViewControllerWithAlignmentOption:UIStackViewAlignmentTop]];
+    [self addToStachViewChildViewController:[self childViewControllerWithAlignmentOption:UIStackViewAlignmentCenter]];
+    [self addToStachViewChildViewController:[self childViewControllerWithAlignmentOption:UIStackViewAlignmentBottom]];
+    [self addToStachViewChildViewController:[self childViewControllerWithAlignmentOption:UIStackViewAlignmentFirstBaseline]];
+    [self addToStachViewChildViewController:[self childViewControllerWithAlignmentOption:UIStackViewAlignmentLastBaseline]];
+}
+
+- (PropertyViewController *)childViewControllerWithDistributionOption:(UIStackViewDistribution)option {
+    return [[PropertyViewController alloc] initWithDistributionOption:option spacing:self.spacing];
+}
+
+- (PropertyViewController *)childViewControllerWithAlignmentOption:(UIStackViewAlignment)option {
+    return [[PropertyViewController alloc] initWithAlignmentOption:option spacing:self.spacing];
 }
 
 - (void)addToStachViewChildViewController:(UIViewController *)childViewController {

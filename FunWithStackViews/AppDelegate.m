@@ -17,7 +17,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window.rootViewController = [[ShowPropertyOptionsViewController alloc] init];
+    self.window.rootViewController = [[ShowPropertyOptionsViewController alloc] initWithShowPropertyOption:ShowPropertyOptionDistribution];
     
     // Override point for customization after application launch.
     return YES;

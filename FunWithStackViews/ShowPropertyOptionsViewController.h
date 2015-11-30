@@ -8,6 +8,13 @@
 
 #import <UIKit/UIKit.h>
 
+typedef NS_ENUM(NSInteger, ShowPropertyOption) {
+    ShowPropertyOptionDistribution,
+    ShowPropertyOptionAlignment
+};
+
 @interface ShowPropertyOptionsViewController : UIViewController
+
+- (instancetype)initWithShowPropertyOption:(ShowPropertyOption)showPropertyOption;
 
 @end

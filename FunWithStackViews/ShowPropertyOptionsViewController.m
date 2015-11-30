@@ -17,41 +17,60 @@
 @property (nonatomic, weak) IBOutlet UIView *equalSpacingView;
 @property (nonatomic, weak) IBOutlet UIView *equalCenteringView;
 
+@property (nonatomic, weak) IBOutlet UIStackView *stackView;
+
+@property (nonatomic, assign) ShowPropertyOption showPropertyOption;
+
 @end
 
 @implementation ShowPropertyOptionsViewController
 
+- (instancetype)initWithShowPropertyOption:(ShowPropertyOption)showPropertyOption {
+    self = [super init];
+    if (self) {
+        _showPropertyOption = showPropertyOption;
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    PropertyViewController *fillVC = [[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionFill];
-    PropertyViewController *fillEquallyVC = [[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionFillEqually];
-    PropertyViewController *fillProportionallyVC = [[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionFillProportionally];
-    PropertyViewController *equalSpacingVC = [[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionEqualSpacing];
-    PropertyViewController *equalCenteringVC = [[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionEqualCentering];
-    
-    [self addChildViewController:fillVC toParentView:self.fillView];
-    [self addChildViewController:fillEquallyVC toParentView:self.fillEquallyView];
-    [self addChildViewController:fillProportionallyVC toParentView:self.fillProportionallyView];
-    [self addChildViewController:equalSpacingVC toParentView:self.equalSpacingView];
-    [self addChildViewController:equalCenteringVC toParentView:self.equalCenteringView];
+    [self setupChildViewControllers];
 }
 
-- (void)addChildViewController:(UIViewController *)childController toParentView:(UIView *)parentView {
-    UIView *subview = childController.view;
-    UILayoutGuide *margins = parentView.layoutMarginsGuide;
-    
-    [subview setTranslatesAutoresizingMaskIntoConstraints:NO];
-    parentView.layoutMargins = UIEdgeInsetsZero;
-    
-    [self addChildViewController:childController];
-    [childController didMoveToParentViewController:self];
-    
-    [parentView addSubview:subview];
-    [childController.view.topAnchor constraintEqualToAnchor:margins.topAnchor].active = YES;
-    [childController.view.bottomAnchor constraintEqualToAnchor:margins.bottomAnchor].active = YES;
-    [childController.view.leadingAnchor constraintEqualToAnchor:margins.leadingAnchor].active = YES;
-    [childController.view.trailingAnchor constraintEqualToAnchor:margins.trailingAnchor].active = YES;
+- (void)setupChildViewControllers {
+    switch (self.showPropertyOption) {
+        case ShowPropertyOptionDistribution:
+            [self setupDistributionOptionChildViewControllers];
+            break;
+        case ShowPropertyOptionAlignment:
+            [self setupAlignmentOptionChildViewControllers];
+            break;
+    }
+}
+
+- (void)setupDistributionOptionChildViewControllers {
+    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionFill]];
+    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionFillEqually]];
+    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionFillProportionally]];
+    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionEqualSpacing]];
+    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithDistributionOption:UIStackViewDistributionEqualCentering]];
+}
+
+- (void)setupAlignmentOptionChildViewControllers {
+    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithAlignmentOption:UIStackViewAlignmentFill]];
+    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithAlignmentOption:UIStackViewAlignmentTop]];
+    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithAlignmentOption:UIStackViewAlignmentCenter]];
+    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithAlignmentOption:UIStackViewAlignmentBottom]];
+    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithAlignmentOption:UIStackViewAlignmentFirstBaseline]];
+    [self addToStachViewChildViewController:[[PropertyViewController alloc] initWithAlignmentOption:UIStackViewAlignmentLastBaseline]];
+}
+
+- (void)addToStachViewChildViewController:(UIViewController *)childViewController {
+    [self addChildViewController:childViewController];
+    [childViewController didMoveToParentViewController:self];
+    [self.stackView addArrangedSubview:childViewController.view];
 }
 
 @end

@@ -11,24 +11,28 @@
 
 @interface ShowPropertyOptionsViewController ()
 
-@property (nonatomic, weak) IBOutlet UIView *fillView;
-@property (nonatomic, weak) IBOutlet UIView *fillEquallyView;
-@property (nonatomic, weak) IBOutlet UIView *fillProportionallyView;
-@property (nonatomic, weak) IBOutlet UIView *equalSpacingView;
-@property (nonatomic, weak) IBOutlet UIView *equalCenteringView;
+@property (nonatomic, weak) IBOutlet UIStackView *propertiesStackView;
+@property (nonatomic, weak) IBOutlet UILabel *greenConstraint;
+@property (nonatomic, weak) IBOutlet UILabel *blueConstraint;
+@property (nonatomic, weak) IBOutlet UILabel *yellowConstraint;
+@property (nonatomic, weak) IBOutlet UILabel *redConstraint;
+@property (nonatomic, weak) IBOutlet UILabel *purpleConstraint;
+@property (nonatomic, weak) IBOutlet UILabel *greenAmount;
+@property (nonatomic, weak) IBOutlet UILabel *blueAmount;
+@property (nonatomic, weak) IBOutlet UILabel *yellowAmount;
+@property (nonatomic, weak) IBOutlet UILabel *redAmount;
+@property (nonatomic, weak) IBOutlet UILabel *purpleAmount;
 
-@property (nonatomic, weak) IBOutlet UIStackView *stackView;
-
-@property (nonatomic, assign) ShowPropertyOption showPropertyOption;
+@property (nonatomic, assign) ShowPropertyOption propertyToShowOption;
 
 @end
 
 @implementation ShowPropertyOptionsViewController
 
-- (instancetype)initWithShowPropertyOption:(ShowPropertyOption)showPropertyOption {
+- (instancetype)initWithPropertyToShowOption:(ShowPropertyOption)propertyToShowOption {
     self = [super init];
     if (self) {
-        _showPropertyOption = showPropertyOption;
+        _propertyToShowOption = propertyToShowOption;
     }
     return self;
 }
@@ -37,10 +41,11 @@
     [super viewDidLoad];
     
     [self setupChildViewControllers];
+    [self setupTextForLabels];
 }
 
 - (void)setupChildViewControllers {
-    switch (self.showPropertyOption) {
+    switch (self.propertyToShowOption) {
         case ShowPropertyOptionDistribution:
             [self setupDistributionOptionChildViewControllers];
             break;
@@ -70,7 +75,39 @@
 - (void)addToStachViewChildViewController:(UIViewController *)childViewController {
     [self addChildViewController:childViewController];
     [childViewController didMoveToParentViewController:self];
-    [self.stackView addArrangedSubview:childViewController.view];
+    [self.propertiesStackView addArrangedSubview:childViewController.view];
+}
+
+- (void)setupTextForLabels {
+    switch (self.propertyToShowOption) {
+        case ShowPropertyOptionDistribution:
+            self.greenConstraint.text = @"Green Width";
+            self.blueConstraint.text = @"Blue Width";
+            self.yellowConstraint.text = @"Yello Width";
+            self.redConstraint.text = @"Red Width";
+            self.purpleConstraint.text = @"Purple Width";
+            
+            self.greenAmount.text = @"= 50";
+            self.blueAmount.text = @"= 100";
+            self.yellowAmount.text = @"= 50";
+            self.redAmount.text = @"= 25";
+            self.purpleAmount.text = @"= 25";
+            break;
+            
+        case ShowPropertyOptionAlignment:
+            self.greenConstraint.text = @"Green Height";
+            self.blueConstraint.text = @"Blue Height";
+            self.yellowConstraint.text = @"Yello Height";
+            self.redConstraint.text = @"Red Height";
+            self.purpleConstraint.text = @"Purple Height";
+            
+            self.greenAmount.text = @"= 45";
+            self.blueAmount.text = @"= 60";
+            self.yellowAmount.text = @"= 45";
+            self.redAmount.text = @"= 30";
+            self.purpleAmount.text = @"= 15";
+            break;
+    }
 }
 
 @end

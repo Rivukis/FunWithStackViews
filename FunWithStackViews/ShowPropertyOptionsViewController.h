@@ -15,6 +15,6 @@ typedef NS_ENUM(NSInteger, ShowPropertyOption) {
 
 @interface ShowPropertyOptionsViewController : UIViewController
 
-- (instancetype)initWithShowPropertyOption:(ShowPropertyOption)showPropertyOption;
+- (instancetype)initWithPropertyToShowOption:(ShowPropertyOption)showPropertyOption;
 
 @end

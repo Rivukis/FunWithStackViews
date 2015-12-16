@@ -18,15 +18,15 @@
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="WS9-bZ-wKd">
                     <rect key="frame" x="0.0" y="20" width="600" height="580"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="1200" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ENX-bD-927">
-                            <rect key="frame" x="0.0" y="0.0" width="600" height="1000"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" placeholderIntrinsicWidth="600" placeholderIntrinsicHeight="1200" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ENX-bD-927">
+                            <rect key="frame" x="0.0" y="0.0" width="600" height="950"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RFt-Yj-TEG" userLabel="Green View">
                                     <rect key="frame" x="0.0" y="0.0" width="600" height="200"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8q-jv-BW5">
                                             <rect key="frame" x="0.0" y="0.0" width="600" height="61"/>
-                                            <string key="text">must set leading, trailing constraints from stackview to scroll view for the content view. Must set equal widths on the stack view and scroll view to override the width from the content</string>
+                                            <string key="text">Must set leading and trailing constraints from stackview to scroll view for the content view. Must set equal widths on the stack view and scroll view to override the width from the content</string>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                             <nil key="highlightedColor"/>
@@ -35,26 +35,38 @@
                                     <color key="backgroundColor" red="0.41560484780000001" green="0.810546875" blue="0.37967815620000001" alpha="1" colorSpace="calibratedRGB"/>
                                     <constraints>
                                         <constraint firstItem="A8q-jv-BW5" firstAttribute="leading" secondItem="RFt-Yj-TEG" secondAttribute="leading" id="3lf-Bs-ErS"/>
-                                        <constraint firstAttribute="height" constant="200" id="Mau-K9-WOu"/>
+                                        <constraint firstAttribute="height" priority="950" constant="200" id="Mau-K9-WOu"/>
                                         <constraint firstItem="A8q-jv-BW5" firstAttribute="top" secondItem="RFt-Yj-TEG" secondAttribute="top" id="RAQ-DM-nYF"/>
                                         <constraint firstAttribute="trailing" secondItem="A8q-jv-BW5" secondAttribute="trailing" id="ctL-qN-rWe"/>
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tyV-kE-dkA" userLabel="Blue View">
-                                    <rect key="frame" x="0.0" y="200" width="600" height="200"/>
+                                    <rect key="frame" x="0.0" y="200" width="600" height="300"/>
                                     <color key="backgroundColor" red="0.39182700770000001" green="0.77790682099999997" blue="0.81755050510000005" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="950" constant="300" id="n0a-tK-9mT"/>
+                                    </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ZS6-7M-ku5" userLabel="Yellow View">
-                                    <rect key="frame" x="0.0" y="400" width="600" height="200"/>
+                                    <rect key="frame" x="0.0" y="500" width="600" height="200"/>
                                     <color key="backgroundColor" red="0.80825897469999997" green="0.810546875" blue="0.38851872879999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="950" constant="200" id="IpL-DP-FzM"/>
+                                    </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="5w2-rb-mkn" userLabel="Red View">
-                                    <rect key="frame" x="0.0" y="600" width="600" height="200"/>
+                                    <rect key="frame" x="0.0" y="700" width="600" height="150"/>
                                     <color key="backgroundColor" red="0.810546875" green="0.47900562660000001" blue="0.44470546319999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="950" constant="150" id="VTV-xJ-QLg"/>
+                                    </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="odH-2j-dRu" userLabel="Purple View">
-                                    <rect key="frame" x="0.0" y="800" width="600" height="200"/>
+                                    <rect key="frame" x="0.0" y="850" width="600" height="100"/>
                                     <color key="backgroundColor" red="0.75968710380000004" green="0.4956093922" blue="0.810546875" alpha="1" colorSpace="calibratedRGB"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" priority="950" constant="100" id="MUO-2C-sWX"/>
+                                    </constraints>
                                 </view>
                             </subviews>
                         </stackView>

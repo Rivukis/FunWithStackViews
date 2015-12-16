@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7A116EED1C220D14005B8A0E /* StackInAScrollViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A116EEB1C220D14005B8A0E /* StackInAScrollViewController.m */; };
+		7A116EEE1C220D14005B8A0E /* StackInAScrollViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A116EEC1C220D14005B8A0E /* StackInAScrollViewController.xib */; };
 		7A3850281BFD39B8003193A6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A3850271BFD39B8003193A6 /* main.m */; };
 		7A38502B1BFD39B8003193A6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A38502A1BFD39B8003193A6 /* AppDelegate.m */; };
 		7A38502E1BFD39B8003193A6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A38502D1BFD39B8003193A6 /* ViewController.m */; };
@@ -20,6 +22,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7A116EEA1C220D14005B8A0E /* StackInAScrollViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StackInAScrollViewController.h; sourceTree = "<group>"; };
+		7A116EEB1C220D14005B8A0E /* StackInAScrollViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StackInAScrollViewController.m; sourceTree = "<group>"; };
+		7A116EEC1C220D14005B8A0E /* StackInAScrollViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StackInAScrollViewController.xib; sourceTree = "<group>"; };
 		7A3850231BFD39B8003193A6 /* FunWithStackViews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FunWithStackViews.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A3850271BFD39B8003193A6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		7A3850291BFD39B8003193A6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,6 +84,9 @@
 				7A6151B71C0668F60029FBA0 /* PropertyViewController.h */,
 				7A6151B81C0668F60029FBA0 /* PropertyViewController.m */,
 				7A6151B91C0668F60029FBA0 /* PropertyViewController.xib */,
+				7A116EEA1C220D14005B8A0E /* StackInAScrollViewController.h */,
+				7A116EEB1C220D14005B8A0E /* StackInAScrollViewController.m */,
+				7A116EEC1C220D14005B8A0E /* StackInAScrollViewController.xib */,
 				7A3850321BFD39B8003193A6 /* Assets.xcassets */,
 				7A3850341BFD39B8003193A6 /* LaunchScreen.storyboard */,
 				7A3850371BFD39B8003193A6 /* Info.plist */,
@@ -156,6 +164,7 @@
 				7A6151C01C0670BD0029FBA0 /* ShowPropertyOptionsViewController.xib in Resources */,
 				7A3850331BFD39B8003193A6 /* Assets.xcassets in Resources */,
 				7A3850311BFD39B8003193A6 /* Main.storyboard in Resources */,
+				7A116EEE1C220D14005B8A0E /* StackInAScrollViewController.xib in Resources */,
 				7A6151BB1C0668F60029FBA0 /* PropertyViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -172,6 +181,7 @@
 				7A38502B1BFD39B8003193A6 /* AppDelegate.m in Sources */,
 				7A3850281BFD39B8003193A6 /* main.m in Sources */,
 				7A6151BA1C0668F60029FBA0 /* PropertyViewController.m in Sources */,
+				7A116EED1C220D14005B8A0E /* StackInAScrollViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

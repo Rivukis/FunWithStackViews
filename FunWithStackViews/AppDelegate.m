@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "ShowPropertyOptionsViewController.h"
+#import "StackInAScrollViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,7 +18,9 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    self.window.rootViewController = [[ShowPropertyOptionsViewController alloc] initWithPropertyToShowOption:ShowPropertyOptionDistribution spacing:0.0f];
+//    self.window.rootViewController = [[ShowPropertyOptionsViewController alloc] initWithPropertyToShowOption:ShowPropertyOptionDistribution spacing:0.0f];
+    
+    self.window.rootViewController = [[StackInAScrollViewController alloc] init];
     
     // Override point for customization after application launch.
     return YES;

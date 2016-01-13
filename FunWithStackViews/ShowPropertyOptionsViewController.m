@@ -44,6 +44,9 @@
     
     [self setupChildViewControllers];
     [self setupTextForLabels];
+    
+    self.propertiesStackView.layoutMargins = UIEdgeInsetsMake(10.0, 0.0, 10.0, 0.0);
+    self.propertiesStackView.layoutMarginsRelativeArrangement = YES;
 }
 
 - (void)setupChildViewControllers {

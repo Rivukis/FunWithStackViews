@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ShowPropertyOptionsViewController">
@@ -36,18 +36,11 @@
                                 <constraint firstAttribute="height" constant="20" id="Ljf-7X-27l"/>
                             </constraints>
                         </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dep-kZ-sN6" userLabel="Top Separator View">
-                            <rect key="frame" x="0.0" y="20" width="600" height="10"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="10" id="wLh-ST-uLv"/>
-                            </constraints>
-                        </view>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="OL1-8s-pTI" userLabel="Stack View's Background View">
-                            <rect key="frame" x="0.0" y="30" width="600" height="441"/>
+                            <rect key="frame" x="0.0" y="20" width="600" height="461"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fng-C4-DwY" userLabel="Properties Stack View">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="427"/>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fng-C4-DwY" userLabel="Properties Stack View">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="461"/>
                                 </stackView>
                             </subviews>
                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -56,13 +49,6 @@
                                 <constraint firstAttribute="trailing" secondItem="fng-C4-DwY" secondAttribute="trailing" id="bwJ-vf-aux"/>
                                 <constraint firstItem="fng-C4-DwY" firstAttribute="leading" secondItem="OL1-8s-pTI" secondAttribute="leading" id="eU8-cP-nzf"/>
                                 <constraint firstItem="fng-C4-DwY" firstAttribute="top" secondItem="OL1-8s-pTI" secondAttribute="top" id="lfc-NH-aA5"/>
-                            </constraints>
-                        </view>
-                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XFs-bS-2Ca" userLabel="Middle Separator View">
-                            <rect key="frame" x="0.0" y="471" width="600" height="10"/>
-                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                            <constraints>
-                                <constraint firstAttribute="height" constant="10" id="pYc-GU-NDr"/>
                             </constraints>
                         </view>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="vwa-wC-bJo" userLabel="Constraints">
@@ -193,13 +179,9 @@
                         </stackView>
                     </subviews>
                     <constraints>
-                        <constraint firstItem="XFs-bS-2Ca" firstAttribute="centerX" secondItem="aXL-ov-Rbk" secondAttribute="centerX" id="333-L3-nvj"/>
-                        <constraint firstItem="dep-kZ-sN6" firstAttribute="width" secondItem="aXL-ov-Rbk" secondAttribute="width" id="POS-Sx-aQm"/>
                         <constraint firstItem="7o3-lu-9zl" firstAttribute="centerX" secondItem="aXL-ov-Rbk" secondAttribute="centerX" id="iyE-mc-6wX"/>
-                        <constraint firstItem="XFs-bS-2Ca" firstAttribute="width" secondItem="aXL-ov-Rbk" secondAttribute="width" id="lkS-9g-ljq"/>
                         <constraint firstItem="7o3-lu-9zl" firstAttribute="width" secondItem="aXL-ov-Rbk" secondAttribute="width" id="rVe-II-TaJ"/>
                         <constraint firstItem="OL1-8s-pTI" firstAttribute="width" secondItem="aXL-ov-Rbk" secondAttribute="width" id="sDc-nb-Mqj"/>
-                        <constraint firstItem="dep-kZ-sN6" firstAttribute="centerX" secondItem="aXL-ov-Rbk" secondAttribute="centerX" id="vVS-7B-Vxx"/>
                     </constraints>
                 </stackView>
             </subviews>
